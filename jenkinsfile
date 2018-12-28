@@ -1,6 +1,7 @@
 node {
  stage('Build'){
    sh 'pwd;ls'
+   sh 'ls | wc -l'
  
  }
 

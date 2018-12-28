@@ -1,7 +1,11 @@
 node {
  stage('Build'){
-   sh 'pwd;ls'
-   sh 'ls | wc -l'
+   //sh 'exit 1'
+  //if(currentBuild.result=='FAILURE'){
+  emailext attachLog: true, body: '<h1> h  r u dear </h1>', mimeType: 'text/html', recipientProviders: [culprits(), developers(), requestor()], subject: 'u failed build', to: 'munniras5@gmail.com'
+
+  
+ // }
  
  }
 

@@ -1,15 +1,6 @@
-pipeline {
-  agent any
-
-  triggers {
-    cron('H/2 * * * *')
+node {
+  properties([pipelineTriggers([cron('H/2 * * * *')])])
+  stage('Test'){
+    echo 'i am in test stage'   
   }
-  stages
-    {
-      stage('Clean workspace and checkout scm') {
-        steps {
-          echo 'hello world i am in stage'
-        }
-      }
-   }
 }

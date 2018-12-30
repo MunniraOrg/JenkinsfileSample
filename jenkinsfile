@@ -16,7 +16,7 @@ properties([pipelineTriggers([cron('H/2 * * * *')])])
 
 node {
   
-  stage('node2'){
+  stage('node2 ProPInMiddle'){
     echo 'i am in node 2 stage'   
   }
 }

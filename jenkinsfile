@@ -1,8 +1,9 @@
 node {
- stage('Build'){
-   triggers {
+ triggers {
       scm('H/2 * * * *')
-   }
+ }
+ stage('Build'){
+    echo 'i am in build stage'
    //sh 'exit 1'
   //if(currentBuild.result=='FAILURE'){
   //emailext attachLog: true, body: '<h1> h  r u dear </h1>', mimeType: 'text/html', recipientProviders: [culprits(), developers(), requestor()], subject: 'u failed build', to: 'munniras5@gmail.com'

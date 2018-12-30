@@ -12,3 +12,10 @@ node {
   }
   
 }
+
+node {
+  
+  stage('node2'){
+    echo 'i am in node 2 stage'   
+  }
+}

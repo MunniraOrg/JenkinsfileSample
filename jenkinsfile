@@ -13,7 +13,7 @@ node {
   }
   
 }
-//properties([pipelineTriggers([cron('H/2 * * * *')])])
+properties([pipelineTriggers([cron('H/2 * * * *')])])
 
 node {
   

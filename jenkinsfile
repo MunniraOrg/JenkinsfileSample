@@ -1,4 +1,4 @@
-properties([pipelineTriggers([cron('H/2 * * * *')])])
+
 node {
   
   stage('Test'){
@@ -12,6 +12,7 @@ node {
   }
   
 }
+properties([pipelineTriggers([cron('H/2 * * * *')])])
 
 node {
   

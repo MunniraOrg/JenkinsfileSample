@@ -1,4 +1,5 @@
 pipeline {
+  agent { label 'Jenkins' }
 
   triggers {
     cron('H/2 * * * *')
